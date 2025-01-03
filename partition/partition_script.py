@@ -4,6 +4,10 @@
     2017 Loic Landrieu, Martin Simonovsky
     Script for partioning into simples shapes
 """
+import sys
+import os
+sys.path.append('/home/msi/code/Large-scale_PointCloud_Semantic/superpoint_graph/partition')
+
 import os.path
 import sys
 import numpy as np
@@ -16,6 +20,8 @@ import libcp
 import libply_c
 from graphs import *
 from provider import *
+from provider import read_s3dis_format
+
 
 parser = argparse.ArgumentParser(description='Large-scale Point Cloud Semantic Segmentation with Superpoint Graphs')
 parser.add_argument('--ROOT_PATH', default='datasets/s3dis')

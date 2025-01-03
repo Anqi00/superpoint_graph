@@ -89,7 +89,6 @@ def get_info(args):
     }
 
 
-
 def preprocess_pointclouds(args):
     """ Preprocesses data by splitting them by components and normalizing."""
     S3DIS_PATH = args.S3DIS_PATH

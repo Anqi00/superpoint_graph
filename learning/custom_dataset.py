@@ -40,13 +40,12 @@ def get_datasets(args, test_seed_offset=0):
 
     # Normalize edge features
     if args.spg_attribs01:
-       trainlist, testlist, validlist, scaler = spg.scaler01(trainlist, testlist)
+        trainlist, testlist = spg.scaler01(trainlist, testlist)
 
     return tnt.dataset.ListDataset([spg.spg_to_igraph(*tlist) for tlist in trainlist],
                                     functools.partial(spg.loader, train=True, args=args, db_path=args.CUSTOM_SET_PATH)), \
            tnt.dataset.ListDataset([spg.spg_to_igraph(*tlist) for tlist in testlist],
-                                    functools.partial(spg.loader, train=False, args=args, db_path=args.CUSTOM_SET_PATH, test_seed_offset=test_seed_offset)) ,\
-            scaler
+                                    functools.partial(spg.loader, train=False, args=args, db_path=args.CUSTOM_SET_PATH, test_seed_offset=test_seed_offset))
 
 def get_info(args):
     edge_feats = 0
@@ -112,5 +111,4 @@ if __name__ == "__main__":
     parser.add_argument('--CUSTOM_SET_PATH', default='datasets/custom_set')
     args = parser.parse_args()
     preprocess_pointclouds(args.CUSTOM_SET_PATH)
-
 

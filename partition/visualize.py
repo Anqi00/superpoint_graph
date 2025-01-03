@@ -52,7 +52,9 @@ if not os.path.isfile(fea_file) or args.supervized_partition:
 spg_file   = root + "superpoint_graphs/" + folder + file_name + '.h5'
 ply_folder = root + "clouds/"            + folder 
 ply_file   = ply_folder                  + file_name
-res_file   = args.res_file + '.h5'
+# res_file   = args.res_file + '.h5'
+res_file = args.res_file if args.res_file.endswith('.h5') else args.res_file + '.h5'
+
 
 if not os.path.isdir(root + "clouds/"):
     os.mkdir(root + "clouds/" )

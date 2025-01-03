@@ -22,6 +22,7 @@ from collections import defaultdict
 import h5py
 
 import torch
+torch.autograd.set_detect_anomaly(True)
 import torch.nn as nn
 import torch.optim as optim
 from torch.optim.lr_scheduler import MultiStepLR
@@ -166,7 +167,10 @@ def main():
         stats = []
 
     train_dataset, test_dataset, valid_dataset, scaler = create_dataset(args)
-
+    print(f"Train dataset size: {len(train_dataset)}")
+    print(f"Test dataset size: {len(test_dataset)}")
+    print(f"Validation dataset size: {len(valid_dataset)}")
+    
     print('Train dataset: %i elements - Test dataset: %i elements - Validation dataset: %i elements' % (len(train_dataset),len(test_dataset),len(valid_dataset)))
     ptnCloudEmbedder = pointnet.CloudEmbedder(args)
     scheduler = MultiStepLR(optimizer, milestones=args.lr_steps, gamma=args.lr_decay, last_epoch=args.start_epoch-1)
@@ -178,6 +182,12 @@ def main():
         model.train()
 
         loader = torch.utils.data.DataLoader(train_dataset, batch_size=args.batch_size, collate_fn=spg.eccpc_collate, num_workers=args.nworkers, shuffle=True, drop_last=True)
+        if len(loader) == 0:
+            raise ValueError("Train loader is empty. Please check your training dataset.")
+
+        for bidx, (targets, GIs, clouds_data) in enumerate(loader):
+            print(f"Batch {bidx}: targets shape: {targets.shape}, clouds_data length: {len(clouds_data)}")
+
         if logging.getLogger().getEffectiveLevel() > logging.DEBUG: loader = tqdm(loader, ncols=65)
 
         loss_meter = tnt.meter.AverageValueMeter()
@@ -224,6 +234,7 @@ def main():
             t0 = time.time()
 
         return acc_meter.value()[0], loss_meter.value()[0], confusion_matrix.get_overall_accuracy(), confusion_matrix.get_average_intersection_union()
+
 
     ############
     def eval(is_valid = False):

@@ -95,7 +95,10 @@ class GraphConvFunction(Function):
 
     @staticmethod
     def backward(ctx, grad_output):
+        # input, weights = ctx.saved_tensors
         input, weights = ctx.saved_tensors
+        input = input.clone()
+        weights = weights.clone()
 
         grad_input = input.new(input.size()).fill_(0)
         grad_weights = weights.new(weights.size())

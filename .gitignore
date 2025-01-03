@@ -3,3 +3,5 @@
 *.vscode
 *.so
 partition/ply_c/build
+data
+results

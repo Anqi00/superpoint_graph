@@ -1,3 +1,6 @@
+个人博客：https://blog.csdn.net/qq_57082933/article/details/144909664?fromshare=blogdetail&sharetype=blogdetail&sharerId=144909664&sharerefer=PC&sharesource=qq_57082933&sharefrom=from_link
+
+以下是官方readme文件：
 
 # Large-scale Point Cloud Semantic Segmentation with Superpoint Graphs
 

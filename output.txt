@@ -1,0 +1,756 @@
+(superpoint_env) msi@msi:~/code/Largescale_PointCloud_Semantic/superpoint_graph$ python partition/partition_script.py --dataset s3dis --ROOT_PATH $S3DIR_DIR --voxel_width 0.03 --reg_strength 0.03
+/home/msi/anaconda3/envs/superpoint_env/lib/python3.6/importlib/_bootstrap.py:219: RuntimeWarning: to-Python converter for std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > > already registered; second conversion method ignored.
+  return f(*args, **kwds)
+/home/msi/anaconda3/envs/superpoint_env/lib/python3.6/importlib/_bootstrap.py:219: RuntimeWarning: to-Python converter for boost::tuples::tuple<std::vector<std::vector<float, std::allocator<float> >, std::allocator<std::vector<float, std::allocator<float> > > >, std::vector<std::vector<unsigned char, std::allocator<unsigned char> >, std::allocator<std::vector<unsigned char, std::allocator<unsigned char> > > >, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >, std::vector<std::vector<unsigned int, std::allocator<unsigned int> >, std::allocator<std::vector<unsigned int, std::allocator<unsigned int> > > >, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type, boost::tuples::null_type> already registered; second conversion method ignored.
+  return f(*args, **kwds)
+=================
+   Area_1/
+=================
+1 / 1---> conferenceRoom_1
+    creating the feature file...
+/home/msi/anaconda3/envs/superpoint_env/lib/python3.6/site-packages/sklearn/utils/validation.py:72: FutureWarning: Pass n_neighbors=1 as keyword args. From version 1.0 (renaming of 0.25) passing these as positional arguments will result in an error
+  "will result in an error", FutureWarning)
+        adding object 1 : chair_12
+        adding object 2 : clutter_2
+        adding object 3 : wall_4
+        adding object 4 : chair_2
+        adding object 5 : clutter_1
+        adding object 6 : chair_3
+        adding object 7 : floor_1
+        adding object 8 : chair_5
+        adding object 9 : chair_11
+        adding object 10 : wall_2
+        adding object 11 : chair_9
+        adding object 12 : board_2
+        adding object 13 : chair_6
+        adding object 14 : clutter_4
+        adding object 15 : table_1
+        adding object 16 : chair_13
+        adding object 17 : clutter_3
+        adding object 18 : board_3
+        adding object 19 : door_1
+        adding object 20 : wall_3
+        adding object 21 : clutter_6
+        adding object 22 : chair_1
+        adding object 23 : chair_8
+        adding object 24 : wall_1
+        adding object 25 : chair_10
+        adding object 26 : bookcase_1
+        adding object 27 : beam_1
+        adding object 28 : chair_7
+        adding object 29 : board_1
+        adding object 30 : chair_4
+        adding object 31 : ceiling_1
+        adding object 32 : clutter_5
+=========================
+======== pruning ========
+=========================
+Voxelization into 178 x 150 x 107 grid
+Reduced from 1136617 to 134536 points (11.83%)
+81% done              
+    computing the superpoint graph...
+        minimal partition...
+        computation of the SPG...
+Timer :   1.0 /   7.9 /   6.1 
+
+
+
+
+检查数据集：
+Inspecting file: data/Stanford3dDataset_v1.2_Aligned_Version/superpoint_graphs/Area_6/conferenceRoom_1.h5
+Root keys:
+Group: components
+    Dataset: 0, Shape: (179,), Dtype: uint32
+    Dataset: 1, Shape: (413,), Dtype: uint32
+    Dataset: 10, Shape: (89,), Dtype: uint32
+    Dataset: 100, Shape: (58,), Dtype: uint32
+    Dataset: 101, Shape: (46,), Dtype: uint32
+    Dataset: 102, Shape: (171,), Dtype: uint32
+    Dataset: 103, Shape: (9,), Dtype: uint32
+    Dataset: 104, Shape: (20,), Dtype: uint32
+    Dataset: 105, Shape: (35,), Dtype: uint32
+    Dataset: 106, Shape: (143,), Dtype: uint32
+    Dataset: 107, Shape: (19,), Dtype: uint32
+    Dataset: 108, Shape: (6,), Dtype: uint32
+    Dataset: 109, Shape: (18,), Dtype: uint32
+    Dataset: 11, Shape: (9,), Dtype: uint32
+    Dataset: 110, Shape: (4,), Dtype: uint32
+    Dataset: 111, Shape: (21,), Dtype: uint32
+    Dataset: 112, Shape: (23,), Dtype: uint32
+    Dataset: 113, Shape: (1,), Dtype: uint32
+    Dataset: 114, Shape: (1,), Dtype: uint32
+    Dataset: 115, Shape: (124,), Dtype: uint32
+    Dataset: 116, Shape: (253,), Dtype: uint32
+    Dataset: 117, Shape: (73,), Dtype: uint32
+    Dataset: 118, Shape: (37,), Dtype: uint32
+    Dataset: 119, Shape: (48,), Dtype: uint32
+    Dataset: 12, Shape: (11,), Dtype: uint32
+    Dataset: 120, Shape: (14,), Dtype: uint32
+    Dataset: 121, Shape: (6,), Dtype: uint32
+    Dataset: 122, Shape: (34,), Dtype: uint32
+    Dataset: 123, Shape: (42,), Dtype: uint32
+    Dataset: 124, Shape: (80,), Dtype: uint32
+    Dataset: 125, Shape: (24,), Dtype: uint32
+    Dataset: 126, Shape: (7,), Dtype: uint32
+    Dataset: 127, Shape: (17,), Dtype: uint32
+    Dataset: 128, Shape: (50,), Dtype: uint32
+    Dataset: 129, Shape: (73,), Dtype: uint32
+    Dataset: 13, Shape: (18,), Dtype: uint32
+    Dataset: 130, Shape: (48,), Dtype: uint32
+    Dataset: 131, Shape: (136,), Dtype: uint32
+    Dataset: 132, Shape: (60,), Dtype: uint32
+    Dataset: 133, Shape: (21,), Dtype: uint32
+    Dataset: 134, Shape: (191,), Dtype: uint32
+    Dataset: 135, Shape: (218,), Dtype: uint32
+    Dataset: 136, Shape: (25,), Dtype: uint32
+    Dataset: 137, Shape: (31,), Dtype: uint32
+    Dataset: 138, Shape: (116,), Dtype: uint32
+    Dataset: 139, Shape: (15,), Dtype: uint32
+    Dataset: 14, Shape: (37,), Dtype: uint32
+    Dataset: 140, Shape: (30,), Dtype: uint32
+    Dataset: 141, Shape: (2306,), Dtype: uint32
+    Dataset: 142, Shape: (36,), Dtype: uint32
+    Dataset: 143, Shape: (7,), Dtype: uint32
+    Dataset: 144, Shape: (13,), Dtype: uint32
+    Dataset: 145, Shape: (86,), Dtype: uint32
+    Dataset: 146, Shape: (9,), Dtype: uint32
+    Dataset: 147, Shape: (118,), Dtype: uint32
+    Dataset: 148, Shape: (23,), Dtype: uint32
+    Dataset: 149, Shape: (580,), Dtype: uint32
+    Dataset: 15, Shape: (84,), Dtype: uint32
+    Dataset: 150, Shape: (28,), Dtype: uint32
+    Dataset: 151, Shape: (899,), Dtype: uint32
+    Dataset: 152, Shape: (39,), Dtype: uint32
+    Dataset: 153, Shape: (55,), Dtype: uint32
+    Dataset: 154, Shape: (45,), Dtype: uint32
+    Dataset: 155, Shape: (105,), Dtype: uint32
+    Dataset: 156, Shape: (13,), Dtype: uint32
+    Dataset: 157, Shape: (132,), Dtype: uint32
+    Dataset: 158, Shape: (12,), Dtype: uint32
+    Dataset: 159, Shape: (34,), Dtype: uint32
+    Dataset: 16, Shape: (10,), Dtype: uint32
+    Dataset: 160, Shape: (58,), Dtype: uint32
+    Dataset: 161, Shape: (24,), Dtype: uint32
+    Dataset: 162, Shape: (84,), Dtype: uint32
+    Dataset: 163, Shape: (17,), Dtype: uint32
+    Dataset: 164, Shape: (3303,), Dtype: uint32
+    Dataset: 165, Shape: (536,), Dtype: uint32
+    Dataset: 166, Shape: (161,), Dtype: uint32
+    Dataset: 167, Shape: (55,), Dtype: uint32
+    Dataset: 168, Shape: (17,), Dtype: uint32
+    Dataset: 169, Shape: (366,), Dtype: uint32
+    Dataset: 17, Shape: (4,), Dtype: uint32
+    Dataset: 170, Shape: (5,), Dtype: uint32
+    Dataset: 171, Shape: (214,), Dtype: uint32
+    Dataset: 172, Shape: (233,), Dtype: uint32
+    Dataset: 173, Shape: (19,), Dtype: uint32
+    Dataset: 174, Shape: (33,), Dtype: uint32
+    Dataset: 175, Shape: (40,), Dtype: uint32
+    Dataset: 176, Shape: (18,), Dtype: uint32
+    Dataset: 177, Shape: (1,), Dtype: uint32
+    Dataset: 178, Shape: (142,), Dtype: uint32
+    Dataset: 179, Shape: (14,), Dtype: uint32
+    Dataset: 18, Shape: (26,), Dtype: uint32
+    Dataset: 180, Shape: (10,), Dtype: uint32
+    Dataset: 181, Shape: (10,), Dtype: uint32
+    Dataset: 182, Shape: (24,), Dtype: uint32
+    Dataset: 183, Shape: (253,), Dtype: uint32
+    Dataset: 184, Shape: (10,), Dtype: uint32
+    Dataset: 185, Shape: (82,), Dtype: uint32
+    Dataset: 186, Shape: (1,), Dtype: uint32
+    Dataset: 187, Shape: (2,), Dtype: uint32
+    Dataset: 188, Shape: (132,), Dtype: uint32
+    Dataset: 189, Shape: (8,), Dtype: uint32
+    Dataset: 19, Shape: (67,), Dtype: uint32
+    Dataset: 190, Shape: (120,), Dtype: uint32
+    Dataset: 191, Shape: (27,), Dtype: uint32
+    Dataset: 192, Shape: (113,), Dtype: uint32
+    Dataset: 193, Shape: (96,), Dtype: uint32
+    Dataset: 194, Shape: (20,), Dtype: uint32
+    Dataset: 195, Shape: (27,), Dtype: uint32
+    Dataset: 196, Shape: (1,), Dtype: uint32
+    Dataset: 197, Shape: (6,), Dtype: uint32
+    Dataset: 198, Shape: (12,), Dtype: uint32
+    Dataset: 199, Shape: (26,), Dtype: uint32
+    Dataset: 2, Shape: (284,), Dtype: uint32
+    Dataset: 20, Shape: (11,), Dtype: uint32
+    Dataset: 200, Shape: (24,), Dtype: uint32
+    Dataset: 201, Shape: (33,), Dtype: uint32
+    Dataset: 202, Shape: (88,), Dtype: uint32
+    Dataset: 203, Shape: (46,), Dtype: uint32
+    Dataset: 204, Shape: (111,), Dtype: uint32
+    Dataset: 205, Shape: (7,), Dtype: uint32
+    Dataset: 206, Shape: (31,), Dtype: uint32
+    Dataset: 207, Shape: (137,), Dtype: uint32
+    Dataset: 208, Shape: (17,), Dtype: uint32
+    Dataset: 209, Shape: (12,), Dtype: uint32
+    Dataset: 21, Shape: (84,), Dtype: uint32
+    Dataset: 210, Shape: (17,), Dtype: uint32
+    Dataset: 211, Shape: (32,), Dtype: uint32
+    Dataset: 212, Shape: (142,), Dtype: uint32
+    Dataset: 213, Shape: (69,), Dtype: uint32
+    Dataset: 214, Shape: (54,), Dtype: uint32
+    Dataset: 215, Shape: (55,), Dtype: uint32
+    Dataset: 216, Shape: (175,), Dtype: uint32
+    Dataset: 217, Shape: (45,), Dtype: uint32
+    Dataset: 218, Shape: (41,), Dtype: uint32
+    Dataset: 219, Shape: (13,), Dtype: uint32
+    Dataset: 22, Shape: (74,), Dtype: uint32
+    Dataset: 220, Shape: (12,), Dtype: uint32
+    Dataset: 221, Shape: (51,), Dtype: uint32
+    Dataset: 222, Shape: (16,), Dtype: uint32
+    Dataset: 223, Shape: (146,), Dtype: uint32
+    Dataset: 224, Shape: (101,), Dtype: uint32
+    Dataset: 225, Shape: (12,), Dtype: uint32
+    Dataset: 226, Shape: (7,), Dtype: uint32
+    Dataset: 227, Shape: (41,), Dtype: uint32
+    Dataset: 228, Shape: (17,), Dtype: uint32
+    Dataset: 229, Shape: (6,), Dtype: uint32
+    Dataset: 23, Shape: (12,), Dtype: uint32
+    Dataset: 230, Shape: (26,), Dtype: uint32
+    Dataset: 231, Shape: (28,), Dtype: uint32
+    Dataset: 232, Shape: (1,), Dtype: uint32
+    Dataset: 233, Shape: (35,), Dtype: uint32
+    Dataset: 234, Shape: (1,), Dtype: uint32
+    Dataset: 235, Shape: (2,), Dtype: uint32
+    Dataset: 236, Shape: (171,), Dtype: uint32
+    Dataset: 237, Shape: (28,), Dtype: uint32
+    Dataset: 238, Shape: (40,), Dtype: uint32
+    Dataset: 239, Shape: (148,), Dtype: uint32
+    Dataset: 24, Shape: (2,), Dtype: uint32
+    Dataset: 240, Shape: (194,), Dtype: uint32
+    Dataset: 241, Shape: (218,), Dtype: uint32
+    Dataset: 242, Shape: (9,), Dtype: uint32
+    Dataset: 243, Shape: (280,), Dtype: uint32
+    Dataset: 244, Shape: (53,), Dtype: uint32
+    Dataset: 245, Shape: (54,), Dtype: uint32
+    Dataset: 246, Shape: (15,), Dtype: uint32
+    Dataset: 247, Shape: (62,), Dtype: uint32
+    Dataset: 248, Shape: (51,), Dtype: uint32
+    Dataset: 249, Shape: (31,), Dtype: uint32
+    Dataset: 25, Shape: (19,), Dtype: uint32
+    Dataset: 250, Shape: (42,), Dtype: uint32
+    Dataset: 251, Shape: (26,), Dtype: uint32
+    Dataset: 252, Shape: (63,), Dtype: uint32
+    Dataset: 253, Shape: (14,), Dtype: uint32
+    Dataset: 254, Shape: (17,), Dtype: uint32
+    Dataset: 255, Shape: (47,), Dtype: uint32
+    Dataset: 256, Shape: (106,), Dtype: uint32
+    Dataset: 257, Shape: (12,), Dtype: uint32
+    Dataset: 258, Shape: (300,), Dtype: uint32
+    Dataset: 259, Shape: (34,), Dtype: uint32
+    Dataset: 26, Shape: (72,), Dtype: uint32
+    Dataset: 260, Shape: (102,), Dtype: uint32
+    Dataset: 261, Shape: (32,), Dtype: uint32
+    Dataset: 262, Shape: (12,), Dtype: uint32
+    Dataset: 263, Shape: (9,), Dtype: uint32
+    Dataset: 264, Shape: (108,), Dtype: uint32
+    Dataset: 265, Shape: (60,), Dtype: uint32
+    Dataset: 266, Shape: (70,), Dtype: uint32
+    Dataset: 267, Shape: (128,), Dtype: uint32
+    Dataset: 268, Shape: (64,), Dtype: uint32
+    Dataset: 269, Shape: (13,), Dtype: uint32
+    Dataset: 27, Shape: (112,), Dtype: uint32
+    Dataset: 270, Shape: (36,), Dtype: uint32
+    Dataset: 271, Shape: (18,), Dtype: uint32
+    Dataset: 272, Shape: (14,), Dtype: uint32
+    Dataset: 273, Shape: (73,), Dtype: uint32
+    Dataset: 274, Shape: (78,), Dtype: uint32
+    Dataset: 275, Shape: (363,), Dtype: uint32
+    Dataset: 276, Shape: (1684,), Dtype: uint32
+    Dataset: 277, Shape: (169,), Dtype: uint32
+    Dataset: 278, Shape: (130,), Dtype: uint32
+    Dataset: 279, Shape: (13,), Dtype: uint32
+    Dataset: 28, Shape: (27,), Dtype: uint32
+    Dataset: 280, Shape: (2592,), Dtype: uint32
+    Dataset: 281, Shape: (66,), Dtype: uint32
+    Dataset: 282, Shape: (132,), Dtype: uint32
+    Dataset: 283, Shape: (29,), Dtype: uint32
+    Dataset: 284, Shape: (10,), Dtype: uint32
+    Dataset: 285, Shape: (4035,), Dtype: uint32
+    Dataset: 286, Shape: (270,), Dtype: uint32
+    Dataset: 287, Shape: (53,), Dtype: uint32
+    Dataset: 288, Shape: (47,), Dtype: uint32
+    Dataset: 289, Shape: (34,), Dtype: uint32
+    Dataset: 29, Shape: (114,), Dtype: uint32
+    Dataset: 290, Shape: (13,), Dtype: uint32
+    Dataset: 291, Shape: (5,), Dtype: uint32
+    Dataset: 292, Shape: (29,), Dtype: uint32
+    Dataset: 293, Shape: (7,), Dtype: uint32
+    Dataset: 294, Shape: (112,), Dtype: uint32
+    Dataset: 295, Shape: (19,), Dtype: uint32
+    Dataset: 296, Shape: (2709,), Dtype: uint32
+    Dataset: 297, Shape: (44,), Dtype: uint32
+    Dataset: 298, Shape: (6,), Dtype: uint32
+    Dataset: 299, Shape: (4,), Dtype: uint32
+    Dataset: 3, Shape: (232,), Dtype: uint32
+    Dataset: 30, Shape: (113,), Dtype: uint32
+    Dataset: 300, Shape: (24,), Dtype: uint32
+    Dataset: 301, Shape: (20,), Dtype: uint32
+    Dataset: 302, Shape: (3,), Dtype: uint32
+    Dataset: 303, Shape: (1,), Dtype: uint32
+    Dataset: 304, Shape: (6,), Dtype: uint32
+    Dataset: 305, Shape: (4,), Dtype: uint32
+    Dataset: 306, Shape: (1,), Dtype: uint32
+    Dataset: 307, Shape: (151,), Dtype: uint32
+    Dataset: 308, Shape: (291,), Dtype: uint32
+    Dataset: 309, Shape: (92,), Dtype: uint32
+    Dataset: 31, Shape: (8,), Dtype: uint32
+    Dataset: 310, Shape: (158,), Dtype: uint32
+    Dataset: 311, Shape: (7682,), Dtype: uint32
+    Dataset: 312, Shape: (39,), Dtype: uint32
+    Dataset: 313, Shape: (1,), Dtype: uint32
+    Dataset: 314, Shape: (84,), Dtype: uint32
+    Dataset: 315, Shape: (99,), Dtype: uint32
+    Dataset: 316, Shape: (6,), Dtype: uint32
+    Dataset: 317, Shape: (3,), Dtype: uint32
+    Dataset: 318, Shape: (45,), Dtype: uint32
+    Dataset: 319, Shape: (11,), Dtype: uint32
+    Dataset: 32, Shape: (55,), Dtype: uint32
+    Dataset: 320, Shape: (170,), Dtype: uint32
+    Dataset: 321, Shape: (14,), Dtype: uint32
+    Dataset: 322, Shape: (1803,), Dtype: uint32
+    Dataset: 323, Shape: (60,), Dtype: uint32
+    Dataset: 324, Shape: (4,), Dtype: uint32
+    Dataset: 325, Shape: (48,), Dtype: uint32
+    Dataset: 326, Shape: (26,), Dtype: uint32
+    Dataset: 327, Shape: (16,), Dtype: uint32
+    Dataset: 328, Shape: (8,), Dtype: uint32
+    Dataset: 329, Shape: (10004,), Dtype: uint32
+    Dataset: 33, Shape: (60,), Dtype: uint32
+    Dataset: 330, Shape: (17,), Dtype: uint32
+    Dataset: 331, Shape: (59,), Dtype: uint32
+    Dataset: 332, Shape: (22,), Dtype: uint32
+    Dataset: 333, Shape: (1265,), Dtype: uint32
+    Dataset: 334, Shape: (2359,), Dtype: uint32
+    Dataset: 335, Shape: (1778,), Dtype: uint32
+    Dataset: 336, Shape: (3998,), Dtype: uint32
+    Dataset: 337, Shape: (139,), Dtype: uint32
+    Dataset: 338, Shape: (2678,), Dtype: uint32
+    Dataset: 339, Shape: (3984,), Dtype: uint32
+    Dataset: 34, Shape: (10,), Dtype: uint32
+    Dataset: 340, Shape: (5,), Dtype: uint32
+    Dataset: 341, Shape: (43,), Dtype: uint32
+    Dataset: 342, Shape: (41,), Dtype: uint32
+    Dataset: 343, Shape: (801,), Dtype: uint32
+    Dataset: 344, Shape: (26,), Dtype: uint32
+    Dataset: 345, Shape: (351,), Dtype: uint32
+    Dataset: 346, Shape: (17,), Dtype: uint32
+    Dataset: 347, Shape: (2,), Dtype: uint32
+    Dataset: 348, Shape: (3,), Dtype: uint32
+    Dataset: 349, Shape: (16,), Dtype: uint32
+    Dataset: 35, Shape: (88,), Dtype: uint32
+    Dataset: 350, Shape: (61,), Dtype: uint32
+    Dataset: 351, Shape: (44,), Dtype: uint32
+    Dataset: 352, Shape: (16,), Dtype: uint32
+    Dataset: 353, Shape: (69,), Dtype: uint32
+    Dataset: 354, Shape: (24,), Dtype: uint32
+    Dataset: 355, Shape: (1,), Dtype: uint32
+    Dataset: 356, Shape: (15,), Dtype: uint32
+    Dataset: 357, Shape: (9,), Dtype: uint32
+    Dataset: 358, Shape: (3,), Dtype: uint32
+    Dataset: 359, Shape: (5,), Dtype: uint32
+    Dataset: 36, Shape: (85,), Dtype: uint32
+    Dataset: 360, Shape: (119,), Dtype: uint32
+    Dataset: 361, Shape: (45,), Dtype: uint32
+    Dataset: 362, Shape: (84,), Dtype: uint32
+    Dataset: 363, Shape: (27,), Dtype: uint32
+    Dataset: 364, Shape: (49,), Dtype: uint32
+    Dataset: 365, Shape: (18,), Dtype: uint32
+    Dataset: 366, Shape: (49,), Dtype: uint32
+    Dataset: 367, Shape: (8648,), Dtype: uint32
+    Dataset: 368, Shape: (8,), Dtype: uint32
+    Dataset: 369, Shape: (30,), Dtype: uint32
+    Dataset: 37, Shape: (22,), Dtype: uint32
+    Dataset: 370, Shape: (11,), Dtype: uint32
+    Dataset: 371, Shape: (21,), Dtype: uint32
+    Dataset: 372, Shape: (249,), Dtype: uint32
+    Dataset: 373, Shape: (65,), Dtype: uint32
+    Dataset: 374, Shape: (36,), Dtype: uint32
+    Dataset: 375, Shape: (112,), Dtype: uint32
+    Dataset: 376, Shape: (47,), Dtype: uint32
+    Dataset: 377, Shape: (26,), Dtype: uint32
+    Dataset: 378, Shape: (232,), Dtype: uint32
+    Dataset: 379, Shape: (36,), Dtype: uint32
+    Dataset: 38, Shape: (1,), Dtype: uint32
+    Dataset: 380, Shape: (313,), Dtype: uint32
+    Dataset: 381, Shape: (52,), Dtype: uint32
+    Dataset: 382, Shape: (33,), Dtype: uint32
+    Dataset: 383, Shape: (12,), Dtype: uint32
+    Dataset: 384, Shape: (34,), Dtype: uint32
+    Dataset: 385, Shape: (58,), Dtype: uint32
+    Dataset: 386, Shape: (19,), Dtype: uint32
+    Dataset: 387, Shape: (18,), Dtype: uint32
+    Dataset: 388, Shape: (31,), Dtype: uint32
+    Dataset: 389, Shape: (1274,), Dtype: uint32
+    Dataset: 39, Shape: (92,), Dtype: uint32
+    Dataset: 390, Shape: (8,), Dtype: uint32
+    Dataset: 391, Shape: (15,), Dtype: uint32
+    Dataset: 392, Shape: (7,), Dtype: uint32
+    Dataset: 393, Shape: (22,), Dtype: uint32
+    Dataset: 394, Shape: (128,), Dtype: uint32
+    Dataset: 395, Shape: (7,), Dtype: uint32
+    Dataset: 396, Shape: (11,), Dtype: uint32
+    Dataset: 397, Shape: (12,), Dtype: uint32
+    Dataset: 398, Shape: (10,), Dtype: uint32
+    Dataset: 399, Shape: (57,), Dtype: uint32
+    Dataset: 4, Shape: (232,), Dtype: uint32
+    Dataset: 40, Shape: (90,), Dtype: uint32
+    Dataset: 400, Shape: (4,), Dtype: uint32
+    Dataset: 401, Shape: (4,), Dtype: uint32
+    Dataset: 402, Shape: (6,), Dtype: uint32
+    Dataset: 403, Shape: (113,), Dtype: uint32
+    Dataset: 404, Shape: (156,), Dtype: uint32
+    Dataset: 405, Shape: (45,), Dtype: uint32
+    Dataset: 406, Shape: (152,), Dtype: uint32
+    Dataset: 407, Shape: (62,), Dtype: uint32
+    Dataset: 408, Shape: (93,), Dtype: uint32
+    Dataset: 409, Shape: (37,), Dtype: uint32
+    Dataset: 41, Shape: (1,), Dtype: uint32
+    Dataset: 410, Shape: (33,), Dtype: uint32
+    Dataset: 411, Shape: (36,), Dtype: uint32
+    Dataset: 412, Shape: (16,), Dtype: uint32
+    Dataset: 413, Shape: (16,), Dtype: uint32
+    Dataset: 414, Shape: (83,), Dtype: uint32
+    Dataset: 415, Shape: (24,), Dtype: uint32
+    Dataset: 416, Shape: (15,), Dtype: uint32
+    Dataset: 417, Shape: (20,), Dtype: uint32
+    Dataset: 418, Shape: (19,), Dtype: uint32
+    Dataset: 419, Shape: (12,), Dtype: uint32
+    Dataset: 42, Shape: (152,), Dtype: uint32
+    Dataset: 420, Shape: (17,), Dtype: uint32
+    Dataset: 421, Shape: (17,), Dtype: uint32
+    Dataset: 422, Shape: (116,), Dtype: uint32
+    Dataset: 423, Shape: (38,), Dtype: uint32
+    Dataset: 424, Shape: (55,), Dtype: uint32
+    Dataset: 425, Shape: (6,), Dtype: uint32
+    Dataset: 426, Shape: (13,), Dtype: uint32
+    Dataset: 427, Shape: (21,), Dtype: uint32
+    Dataset: 428, Shape: (18,), Dtype: uint32
+    Dataset: 429, Shape: (1,), Dtype: uint32
+    Dataset: 43, Shape: (26,), Dtype: uint32
+    Dataset: 430, Shape: (102,), Dtype: uint32
+    Dataset: 431, Shape: (12,), Dtype: uint32
+    Dataset: 432, Shape: (1,), Dtype: uint32
+    Dataset: 433, Shape: (15,), Dtype: uint32
+    Dataset: 434, Shape: (282,), Dtype: uint32
+    Dataset: 435, Shape: (18,), Dtype: uint32
+    Dataset: 436, Shape: (33,), Dtype: uint32
+    Dataset: 437, Shape: (8,), Dtype: uint32
+    Dataset: 438, Shape: (42,), Dtype: uint32
+    Dataset: 439, Shape: (30,), Dtype: uint32
+    Dataset: 44, Shape: (15,), Dtype: uint32
+    Dataset: 440, Shape: (47,), Dtype: uint32
+    Dataset: 441, Shape: (128,), Dtype: uint32
+    Dataset: 442, Shape: (10,), Dtype: uint32
+    Dataset: 443, Shape: (132,), Dtype: uint32
+    Dataset: 444, Shape: (19,), Dtype: uint32
+    Dataset: 445, Shape: (246,), Dtype: uint32
+    Dataset: 446, Shape: (46,), Dtype: uint32
+    Dataset: 447, Shape: (38,), Dtype: uint32
+    Dataset: 448, Shape: (178,), Dtype: uint32
+    Dataset: 449, Shape: (49,), Dtype: uint32
+    Dataset: 45, Shape: (325,), Dtype: uint32
+    Dataset: 450, Shape: (11182,), Dtype: uint32
+    Dataset: 451, Shape: (5,), Dtype: uint32
+    Dataset: 452, Shape: (21,), Dtype: uint32
+    Dataset: 453, Shape: (9,), Dtype: uint32
+    Dataset: 454, Shape: (6,), Dtype: uint32
+    Dataset: 455, Shape: (118,), Dtype: uint32
+    Dataset: 456, Shape: (43,), Dtype: uint32
+    Dataset: 457, Shape: (4,), Dtype: uint32
+    Dataset: 458, Shape: (91,), Dtype: uint32
+    Dataset: 459, Shape: (168,), Dtype: uint32
+    Dataset: 46, Shape: (66,), Dtype: uint32
+    Dataset: 460, Shape: (1041,), Dtype: uint32
+    Dataset: 461, Shape: (44,), Dtype: uint32
+    Dataset: 462, Shape: (65,), Dtype: uint32
+    Dataset: 463, Shape: (141,), Dtype: uint32
+    Dataset: 464, Shape: (231,), Dtype: uint32
+    Dataset: 465, Shape: (7,), Dtype: uint32
+    Dataset: 466, Shape: (13,), Dtype: uint32
+    Dataset: 467, Shape: (13,), Dtype: uint32
+    Dataset: 468, Shape: (12,), Dtype: uint32
+    Dataset: 469, Shape: (27,), Dtype: uint32
+    Dataset: 47, Shape: (19,), Dtype: uint32
+    Dataset: 470, Shape: (56,), Dtype: uint32
+    Dataset: 471, Shape: (66,), Dtype: uint32
+    Dataset: 472, Shape: (105,), Dtype: uint32
+    Dataset: 473, Shape: (29,), Dtype: uint32
+    Dataset: 474, Shape: (258,), Dtype: uint32
+    Dataset: 475, Shape: (12,), Dtype: uint32
+    Dataset: 476, Shape: (34,), Dtype: uint32
+    Dataset: 477, Shape: (32,), Dtype: uint32
+    Dataset: 478, Shape: (208,), Dtype: uint32
+    Dataset: 479, Shape: (60,), Dtype: uint32
+    Dataset: 48, Shape: (75,), Dtype: uint32
+    Dataset: 480, Shape: (48,), Dtype: uint32
+    Dataset: 481, Shape: (1,), Dtype: uint32
+    Dataset: 482, Shape: (53,), Dtype: uint32
+    Dataset: 483, Shape: (5,), Dtype: uint32
+    Dataset: 484, Shape: (10,), Dtype: uint32
+    Dataset: 485, Shape: (92,), Dtype: uint32
+    Dataset: 486, Shape: (220,), Dtype: uint32
+    Dataset: 487, Shape: (26,), Dtype: uint32
+    Dataset: 488, Shape: (94,), Dtype: uint32
+    Dataset: 489, Shape: (261,), Dtype: uint32
+    Dataset: 49, Shape: (116,), Dtype: uint32
+    Dataset: 490, Shape: (209,), Dtype: uint32
+    Dataset: 491, Shape: (2,), Dtype: uint32
+    Dataset: 492, Shape: (294,), Dtype: uint32
+    Dataset: 493, Shape: (6,), Dtype: uint32
+    Dataset: 494, Shape: (151,), Dtype: uint32
+    Dataset: 495, Shape: (211,), Dtype: uint32
+    Dataset: 496, Shape: (87,), Dtype: uint32
+    Dataset: 497, Shape: (62,), Dtype: uint32
+    Dataset: 498, Shape: (2,), Dtype: uint32
+    Dataset: 499, Shape: (152,), Dtype: uint32
+    Dataset: 5, Shape: (31,), Dtype: uint32
+    Dataset: 50, Shape: (32,), Dtype: uint32
+    Dataset: 500, Shape: (17,), Dtype: uint32
+    Dataset: 501, Shape: (21,), Dtype: uint32
+    Dataset: 502, Shape: (717,), Dtype: uint32
+    Dataset: 503, Shape: (10,), Dtype: uint32
+    Dataset: 504, Shape: (1,), Dtype: uint32
+    Dataset: 505, Shape: (815,), Dtype: uint32
+    Dataset: 506, Shape: (156,), Dtype: uint32
+    Dataset: 507, Shape: (1,), Dtype: uint32
+    Dataset: 508, Shape: (87,), Dtype: uint32
+    Dataset: 509, Shape: (6,), Dtype: uint32
+    Dataset: 51, Shape: (44,), Dtype: uint32
+    Dataset: 510, Shape: (60,), Dtype: uint32
+    Dataset: 511, Shape: (590,), Dtype: uint32
+    Dataset: 512, Shape: (36,), Dtype: uint32
+    Dataset: 513, Shape: (171,), Dtype: uint32
+    Dataset: 514, Shape: (15,), Dtype: uint32
+    Dataset: 515, Shape: (105,), Dtype: uint32
+    Dataset: 516, Shape: (89,), Dtype: uint32
+    Dataset: 517, Shape: (157,), Dtype: uint32
+    Dataset: 518, Shape: (9,), Dtype: uint32
+    Dataset: 519, Shape: (7,), Dtype: uint32
+    Dataset: 52, Shape: (97,), Dtype: uint32
+    Dataset: 520, Shape: (19,), Dtype: uint32
+    Dataset: 521, Shape: (2116,), Dtype: uint32
+    Dataset: 522, Shape: (431,), Dtype: uint32
+    Dataset: 523, Shape: (296,), Dtype: uint32
+    Dataset: 524, Shape: (178,), Dtype: uint32
+    Dataset: 525, Shape: (105,), Dtype: uint32
+    Dataset: 526, Shape: (80,), Dtype: uint32
+    Dataset: 527, Shape: (21,), Dtype: uint32
+    Dataset: 528, Shape: (82,), Dtype: uint32
+    Dataset: 529, Shape: (159,), Dtype: uint32
+    Dataset: 53, Shape: (177,), Dtype: uint32
+    Dataset: 530, Shape: (109,), Dtype: uint32
+    Dataset: 531, Shape: (111,), Dtype: uint32
+    Dataset: 532, Shape: (79,), Dtype: uint32
+    Dataset: 533, Shape: (18,), Dtype: uint32
+    Dataset: 534, Shape: (11,), Dtype: uint32
+    Dataset: 535, Shape: (81,), Dtype: uint32
+    Dataset: 536, Shape: (14,), Dtype: uint32
+    Dataset: 537, Shape: (74,), Dtype: uint32
+    Dataset: 538, Shape: (4,), Dtype: uint32
+    Dataset: 539, Shape: (43,), Dtype: uint32
+    Dataset: 54, Shape: (37,), Dtype: uint32
+    Dataset: 540, Shape: (24,), Dtype: uint32
+    Dataset: 541, Shape: (83,), Dtype: uint32
+    Dataset: 542, Shape: (132,), Dtype: uint32
+    Dataset: 543, Shape: (77,), Dtype: uint32
+    Dataset: 544, Shape: (4,), Dtype: uint32
+    Dataset: 545, Shape: (20,), Dtype: uint32
+    Dataset: 546, Shape: (21,), Dtype: uint32
+    Dataset: 547, Shape: (1,), Dtype: uint32
+    Dataset: 548, Shape: (5,), Dtype: uint32
+    Dataset: 549, Shape: (57,), Dtype: uint32
+    Dataset: 55, Shape: (14,), Dtype: uint32
+    Dataset: 550, Shape: (63,), Dtype: uint32
+    Dataset: 551, Shape: (43,), Dtype: uint32
+    Dataset: 552, Shape: (47,), Dtype: uint32
+    Dataset: 553, Shape: (45,), Dtype: uint32
+    Dataset: 554, Shape: (63,), Dtype: uint32
+    Dataset: 555, Shape: (21,), Dtype: uint32
+    Dataset: 556, Shape: (9,), Dtype: uint32
+    Dataset: 557, Shape: (21,), Dtype: uint32
+    Dataset: 558, Shape: (43,), Dtype: uint32
+    Dataset: 559, Shape: (526,), Dtype: uint32
+    Dataset: 56, Shape: (14,), Dtype: uint32
+    Dataset: 560, Shape: (96,), Dtype: uint32
+    Dataset: 561, Shape: (19,), Dtype: uint32
+    Dataset: 562, Shape: (21,), Dtype: uint32
+    Dataset: 563, Shape: (31,), Dtype: uint32
+    Dataset: 564, Shape: (29,), Dtype: uint32
+    Dataset: 565, Shape: (5,), Dtype: uint32
+    Dataset: 566, Shape: (266,), Dtype: uint32
+    Dataset: 567, Shape: (44,), Dtype: uint32
+    Dataset: 568, Shape: (8,), Dtype: uint32
+    Dataset: 569, Shape: (37,), Dtype: uint32
+    Dataset: 57, Shape: (52,), Dtype: uint32
+    Dataset: 570, Shape: (18,), Dtype: uint32
+    Dataset: 571, Shape: (60,), Dtype: uint32
+    Dataset: 572, Shape: (81,), Dtype: uint32
+    Dataset: 573, Shape: (18,), Dtype: uint32
+    Dataset: 574, Shape: (34,), Dtype: uint32
+    Dataset: 575, Shape: (23,), Dtype: uint32
+    Dataset: 576, Shape: (43,), Dtype: uint32
+    Dataset: 577, Shape: (9,), Dtype: uint32
+    Dataset: 578, Shape: (57,), Dtype: uint32
+    Dataset: 579, Shape: (10,), Dtype: uint32
+    Dataset: 58, Shape: (10,), Dtype: uint32
+    Dataset: 580, Shape: (161,), Dtype: uint32
+    Dataset: 581, Shape: (78,), Dtype: uint32
+    Dataset: 582, Shape: (2,), Dtype: uint32
+    Dataset: 583, Shape: (2,), Dtype: uint32
+    Dataset: 584, Shape: (8,), Dtype: uint32
+    Dataset: 585, Shape: (59,), Dtype: uint32
+    Dataset: 586, Shape: (24,), Dtype: uint32
+    Dataset: 587, Shape: (22,), Dtype: uint32
+    Dataset: 588, Shape: (9,), Dtype: uint32
+    Dataset: 589, Shape: (33,), Dtype: uint32
+    Dataset: 59, Shape: (43,), Dtype: uint32
+    Dataset: 590, Shape: (18,), Dtype: uint32
+    Dataset: 591, Shape: (4,), Dtype: uint32
+    Dataset: 592, Shape: (1,), Dtype: uint32
+    Dataset: 593, Shape: (1,), Dtype: uint32
+    Dataset: 594, Shape: (30,), Dtype: uint32
+    Dataset: 595, Shape: (39,), Dtype: uint32
+    Dataset: 596, Shape: (99,), Dtype: uint32
+    Dataset: 597, Shape: (26,), Dtype: uint32
+    Dataset: 598, Shape: (10,), Dtype: uint32
+    Dataset: 599, Shape: (16,), Dtype: uint32
+    Dataset: 6, Shape: (7,), Dtype: uint32
+    Dataset: 60, Shape: (48,), Dtype: uint32
+    Dataset: 600, Shape: (3,), Dtype: uint32
+    Dataset: 601, Shape: (136,), Dtype: uint32
+    Dataset: 602, Shape: (39,), Dtype: uint32
+    Dataset: 603, Shape: (2,), Dtype: uint32
+    Dataset: 604, Shape: (4,), Dtype: uint32
+    Dataset: 605, Shape: (84,), Dtype: uint32
+    Dataset: 606, Shape: (297,), Dtype: uint32
+    Dataset: 607, Shape: (118,), Dtype: uint32
+    Dataset: 608, Shape: (944,), Dtype: uint32
+    Dataset: 609, Shape: (12,), Dtype: uint32
+    Dataset: 61, Shape: (109,), Dtype: uint32
+    Dataset: 610, Shape: (74,), Dtype: uint32
+    Dataset: 611, Shape: (72,), Dtype: uint32
+    Dataset: 612, Shape: (8,), Dtype: uint32
+    Dataset: 613, Shape: (15,), Dtype: uint32
+    Dataset: 614, Shape: (2,), Dtype: uint32
+    Dataset: 615, Shape: (65,), Dtype: uint32
+    Dataset: 616, Shape: (7,), Dtype: uint32
+    Dataset: 617, Shape: (12,), Dtype: uint32
+    Dataset: 618, Shape: (11,), Dtype: uint32
+    Dataset: 619, Shape: (6,), Dtype: uint32
+    Dataset: 62, Shape: (105,), Dtype: uint32
+    Dataset: 620, Shape: (1,), Dtype: uint32
+    Dataset: 621, Shape: (32,), Dtype: uint32
+    Dataset: 622, Shape: (13,), Dtype: uint32
+    Dataset: 623, Shape: (79,), Dtype: uint32
+    Dataset: 624, Shape: (10,), Dtype: uint32
+    Dataset: 625, Shape: (12,), Dtype: uint32
+    Dataset: 626, Shape: (115,), Dtype: uint32
+    Dataset: 627, Shape: (11,), Dtype: uint32
+    Dataset: 628, Shape: (42,), Dtype: uint32
+    Dataset: 629, Shape: (48,), Dtype: uint32
+    Dataset: 63, Shape: (892,), Dtype: uint32
+    Dataset: 630, Shape: (42,), Dtype: uint32
+    Dataset: 631, Shape: (5,), Dtype: uint32
+    Dataset: 632, Shape: (6,), Dtype: uint32
+    Dataset: 633, Shape: (35,), Dtype: uint32
+    Dataset: 634, Shape: (34,), Dtype: uint32
+    Dataset: 635, Shape: (19,), Dtype: uint32
+    Dataset: 636, Shape: (78,), Dtype: uint32
+    Dataset: 637, Shape: (70,), Dtype: uint32
+    Dataset: 638, Shape: (38,), Dtype: uint32
+    Dataset: 639, Shape: (91,), Dtype: uint32
+    Dataset: 64, Shape: (177,), Dtype: uint32
+    Dataset: 640, Shape: (40,), Dtype: uint32
+    Dataset: 641, Shape: (60,), Dtype: uint32
+    Dataset: 642, Shape: (4,), Dtype: uint32
+    Dataset: 643, Shape: (17,), Dtype: uint32
+    Dataset: 644, Shape: (33,), Dtype: uint32
+    Dataset: 645, Shape: (21,), Dtype: uint32
+    Dataset: 646, Shape: (63,), Dtype: uint32
+    Dataset: 647, Shape: (10,), Dtype: uint32
+    Dataset: 648, Shape: (65,), Dtype: uint32
+    Dataset: 649, Shape: (54,), Dtype: uint32
+    Dataset: 65, Shape: (83,), Dtype: uint32
+    Dataset: 66, Shape: (68,), Dtype: uint32
+    Dataset: 67, Shape: (1897,), Dtype: uint32
+    Dataset: 68, Shape: (3479,), Dtype: uint32
+    Dataset: 69, Shape: (15,), Dtype: uint32
+    Dataset: 7, Shape: (12,), Dtype: uint32
+    Dataset: 70, Shape: (108,), Dtype: uint32
+    Dataset: 71, Shape: (13,), Dtype: uint32
+    Dataset: 72, Shape: (6,), Dtype: uint32
+    Dataset: 73, Shape: (18,), Dtype: uint32
+    Dataset: 74, Shape: (5,), Dtype: uint32
+    Dataset: 75, Shape: (2,), Dtype: uint32
+    Dataset: 76, Shape: (13,), Dtype: uint32
+    Dataset: 77, Shape: (24,), Dtype: uint32
+    Dataset: 78, Shape: (121,), Dtype: uint32
+    Dataset: 79, Shape: (11,), Dtype: uint32
+    Dataset: 8, Shape: (3,), Dtype: uint32
+    Dataset: 80, Shape: (66,), Dtype: uint32
+    Dataset: 81, Shape: (106,), Dtype: uint32
+    Dataset: 82, Shape: (8,), Dtype: uint32
+    Dataset: 83, Shape: (1,), Dtype: uint32
+    Dataset: 84, Shape: (14,), Dtype: uint32
+    Dataset: 85, Shape: (110,), Dtype: uint32
+    Dataset: 86, Shape: (11,), Dtype: uint32
+    Dataset: 87, Shape: (73,), Dtype: uint32
+    Dataset: 88, Shape: (43,), Dtype: uint32
+    Dataset: 89, Shape: (11,), Dtype: uint32
+    Dataset: 9, Shape: (98,), Dtype: uint32
+    Dataset: 90, Shape: (3,), Dtype: uint32
+    Dataset: 91, Shape: (19,), Dtype: uint32
+    Dataset: 92, Shape: (31,), Dtype: uint32
+    Dataset: 93, Shape: (116,), Dtype: uint32
+    Dataset: 94, Shape: (28,), Dtype: uint32
+    Dataset: 95, Shape: (36,), Dtype: uint32
+    Dataset: 96, Shape: (14,), Dtype: uint32
+    Dataset: 97, Shape: (126,), Dtype: uint32
+    Dataset: 98, Shape: (23,), Dtype: uint32
+    Dataset: 99, Shape: (31,), Dtype: uint32
+Dataset: in_component, Shape: (125187,), Dtype: uint32
+Dataset: se_delta_centroid, Shape: (9106, 3), Dtype: float32
+Dataset: se_delta_mean, Shape: (9106, 3), Dtype: float32
+Dataset: se_delta_norm, Shape: (9106, 1), Dtype: float32
+Dataset: se_delta_std, Shape: (9106, 3), Dtype: float32
+Dataset: se_length_ratio, Shape: (9106, 1), Dtype: float32
+Dataset: se_point_count_ratio, Shape: (9106, 1), Dtype: float32
+Dataset: se_surface_ratio, Shape: (9106, 1), Dtype: float32
+Dataset: se_volume_ratio, Shape: (9106, 1), Dtype: float32
+Dataset: source, Shape: (9106, 1), Dtype: uint32
+Dataset: sp_centroids, Shape: (650, 3), Dtype: float32
+Dataset: sp_labels, Shape: (650, 14), Dtype: uint32
+Dataset: sp_length, Shape: (650, 1), Dtype: float32
+Dataset: sp_point_count, Shape: (650, 1), Dtype: uint64
+Dataset: sp_surface, Shape: (650, 1), Dtype: float32
+Dataset: sp_volume, Shape: (650, 1), Dtype: float32
+Dataset: target, Shape: (9106, 1), Dtype: uint32
+
+Sample values from 'sp_labels':
+[[   9  713    0  421    0  503    0    0    0    0    0    0    0    0]
+ [  14    0    0    0    0 3372    0    0    0    0    0    0    0    0]
+ [   8    0    0    0    0 2364    0  162    0    0    0    0    0    0]
+ [  11 2048    0    0    0    0    0    0    0    0    0    0    0    0]
+ [   9    0    0    0    0    0    0    0    0 1730    0    0    0    0]
+ [   2    0    0    0    0    0    0    0    0  221    0    0    0    0]
+ [   0    0    0    0    0    0    0    0    0   68    0    0    0    0]
+ [   0    0    0    0    0    0    0    0    0   56    0    0    0    0]
+ [   0    0    0    0    0    0    0    0    0   10    0    0    0    0]
+ [   3    0    0    0    0    0    0    0    0  733    0    0    0    0]]
+
+Sample values from 'target':
+[[ 62]
+ [ 68]
+ [155]
+ [158]
+ [164]
+ [172]
+ [322]
+ [331]
+ [332]
+ [338]]
+
+Sample values from 'in_component':
+[  0 155 155 155 155 155 155 155 155 155]
